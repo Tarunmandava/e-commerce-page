@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website product page</title>
+
+    <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="product_Info.css">
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product1_Page.css" />
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <!-- Nav  -->
+      <div class="nav-bar container">
+        <a href="index.html" class="logo">Ecommerce</a>
+        <!-- Cart Icon  -->
+        <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+        <!-- Cart  -->
+        <div class="cart">
+          <h2 class="cart-title">Shopping Cart</h2>
+          <!-- Content  -->
+          <div class="cart-content"></div>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">₹0</div>
+          </div>
+          <div class="total-div-text"><p>To find out your shipping cost, Please proceed to checkout</p></div>
+          <!-- By Button -->
+          <button type="button" class="btn-buy">checkout</button>
+          <a href="index.html"><input type="button" value="Continue Shopping" class="btn-buy"></a>
+          <!-- Cart Close -->
+          <i class="fa-solid fa-xmark fa-beat-fade" id="close-cart"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- product1 Page -->
+    <section class="product1-page">
+      <div class="Card">
+        <div class="img-container">
+          <div class="side-img">
+            <img src="product1.png" alt="" onclick="clk(this)"> <br>
+            <img src="product2.jpg" alt="" onclick="clk(this)">
+            <img src="product3.jpg" alt="" onclick="clk(this)">
+            <img src="product4.jpg" alt="" onclick="clk(this)">
+            <img src="product5.jpg" alt="" class="pro-img-5" onclick="clk(this)">
+          </div>
+          <div class="left">
+            <img src="product1.png" id="imgs" alt="">
+          </div>
+        </div>
+        <div class="right-side-item">
+        <div class="right">
+          <p><i class="fa-solid fa-star" style="color: #f4c730;"></i> 4.8 <span class="lightcolor">|</span> 260 reviews <i class="fa-solid fa-circle-check" style="color: #00c68c;"></i></p>
+          <h3>Bluetooth Headphones</h3>
+          <h1>Rockerz 450</h1>
+          <h1>₹1,699 <br> <span>57% Off</span></h1>
+          <h3>Brand : Rockerz 450</h3>
+          <p>Over Ear Bluetooth Headphones with Upto 15 Hours Playback, <br> Adaptive Headband, 40mm Dynamic Driver, 300 mah Battery</p>
+          <div class="row">
+            <div class="product-box">
+              <img src="product1.png" alt="" class="product-img" />
+              <h2 class="product-title"></h2>
+              <span class="price">₹1699</span>
+                <i class="bxx add-cart"></i>
+                <input type="button" value="Add to Cart" class="button add-cart">
+                <input type="button" value="Buy Now" class="button add-cart">
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          <!-- product info  -->
+    <section>
+  <div class="product-info-tabs">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          id="description-tab"
+          data-toggle="tab"
+          href="#description"
+          role="tab"
+          aria-controls="description"
+          aria-selected="true"
+          >Description</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="review-tab"
+          data-toggle="tab"
+          href="#review"
+          role="tab"
+          aria-controls="review"
+          aria-selected="false"
+          >Reviews (0)</a
+        >
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="description"
+        role="tabpanel"
+        aria-labelledby="description-tab"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum. Sed ut
+        perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam.
+      </div>
+      <div
+        class="tab-pane fade"
+        id="review"
+        role="tabpanel"
+        aria-labelledby="review-tab"
+      >
+        <div class="review-heading">REVIEWS</div>
+        <p class="mb-20">There are no reviews yet.</p>
+        <form class="review-form">
+          <div class="form-group">
+            <label>Your rating</label>
+            <div class="reviews-counter">
+              <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Your message</label>
+            <textarea class="form-control" rows="10"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  class="form-control"
+                  placeholder="Name*"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  class="form-control"
+                  placeholder="Email Id*"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="round-black-btn">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </section>
+    <footer>
+      <div class="footer">
+      <div class="footer-row">
+      <a href="https://www.linkedin.com/in/shubham-vishwakarma-shubham77108/"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/shubham-vishwakarma-shubham77108/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/shubham-vishwakarma-shubham77108/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/shubham-vishwakarma-shubham77108/"><i class="fa-brands fa-git"></i></i></a>
+      </div>
+      
+      <div class="footer-row">
+      <ul>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Career</a></li>
+      </ul>
+      </div>
+      
+      <div class="footer-row">
+      Copyright © 2023- All rights reserved || By: Shubham 
+      </div>
+      </div>
+      </footer>
+      
+  </body>
+  <script src="script.js"></script>
+  <script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="	sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
+</html>
